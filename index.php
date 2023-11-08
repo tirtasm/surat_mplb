@@ -43,6 +43,17 @@ $jumlahSurat = mysqli_num_rows($totalSurat);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
     <title>Document</title>
+    <style>
+        .tes {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .tes>a {
+            margin: 20px;
+        }
+    </style>
 </head>
 
 <body>
@@ -89,7 +100,11 @@ $jumlahSurat = mysqli_num_rows($totalSurat);
                 <p class="card-text">JUMLAH SURAT</p>
             </div>
         </div>
+        <div class="tes">
+            <a href="tambah.php" class="btn btn-primary">TAMBAH SURAT</a>
+            <a href="view.php" class="btn btn-primary">LIHAT SURAT</a>
 
+        </div>
 
         <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
