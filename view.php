@@ -115,7 +115,7 @@ $nama_bulan = [
                     $bulan = str_replace(" ", "%20", $nama_bulan[(int) $tanggal_suratnya[1] - 1]);
                     $tahun = $tanggal_suratnya[0];
 
-                    echo $tahun;
+
                     $surat = str_replace(" ", "%20", $datanya['file_surat']);
 
 
