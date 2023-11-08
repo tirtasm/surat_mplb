@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Nov 08, 2023 at 01:09 AM
+-- Generation Time: Nov 08, 2023 at 01:35 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -38,21 +38,6 @@ CREATE TABLE `surat` (
   `keterangan` text NOT NULL,
   `file_surat` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
---
--- Dumping data for table `surat`
---
-
-INSERT INTO `surat` (`id`, `no_surat`, `tanggal_input`, `tanggal_surat`, `dari`, `uraian`, `kode`, `keterangan`, `file_surat`) VALUES
-(106, '', '26-10-2023', '2023-10-21', '', '', '', '', '372-Article Text-889-1-10-20210705.pdf'),
-(107, 'kj', '26-10-2023', '2023-10-30', 'ojk', 'oijk', 'ojk', 'oij', '372-Article Text-889-1-10-20210705.pdf'),
-(108, 'ds', '27-10-2023', '2023-10-26', 'dari', 'asdf', 'asfdf', 'asdf', 'Purple and Orange Business Workplan Presentation.pdf'),
-(109, 'hgvnb', '07-11-2023', '2023-11-24', 'cfgv', 'fgh', 'tgh', 'fgh', '1.PDF'),
-(110, 'ok', '07-11-2023', '2023-11-15', 'ok', 'ok', 'ok', 'ok', 'DOC-20231023-WA0010..pdf'),
-(111, 'he', '07-11-2023', '2023-11-07', 'ads', 'sa', 'okok', 'okok', 'DOC-20231023-WA0010. (3).pdf'),
-(112, 's', '07-11-2023', '2023-11-08', 'das', 'ads', 'dsa', 'sad', 'DOC-20231023-WA0010..pdf'),
-(113, 'df', '07-11-2023', '2023-11-15', 'asd', 'as', 'sad', 'Keluar', 'DOC-20231023-WA0010..pdf'),
-(114, '001', '08-11-2023', '2006-10-17', 'SMKN 1 KEBUMEN', 'AESXDCFVGHJMK', 'RCTCYGVHBJK', 'Keluar', 'DOC-20231023-WA0010. (2).pdf');
 
 --
 -- Indexes for dumped tables
