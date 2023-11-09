@@ -8,8 +8,6 @@ $dotenv->load();
 $instansi = $_ENV["INSTANSI"];
 
 
-
-
 // Konek ke database surat
 $conn = mysqli_connect("localhost", "root", "", "surat");
 

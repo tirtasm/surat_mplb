@@ -24,7 +24,7 @@ $nama_bulan = [
     "8. Agustus",
     "9. September",
     "10. Oktober",
-    "11. Novmber",
+    "11. November",
     "12. Desember"
 ];
 
