@@ -56,26 +56,25 @@
         <h1 style="text-align: center">MASUKAN DATA</h1>
         <div class="container">
             <form action="add.php" method="post" enctype="multipart/form-data">
-                
                 <label for="no_surat" class="form-label">NO SURAT</label>
-                <input type="text" name="no_surat" class="form-control" id="no_surat" required />
+                <input required type="text" name="no_surat" class="form-control" id="no_surat" />
                 <label for="tanggal" class="form-label">TANGGAL SURAT</label>
-                <input type="date" name="tanggal_surat" class="form-control" id="tanggal" required/>
+                <input required type="date" name="tanggal_surat" class="form-control" id="tanggal" />
                 <label for="dari" class="form-label">DARI/KEPADA</label>
-                <input type="text" name="dari" class="form-control" id="dari" required/>
+                <input required type="text" name="dari" class="form-control" id="dari" />
                 <label for="uraian" class="form-label">URAIAN</label>
-                <textarea name="uraian" type="text" class="form-control" id="uraian" rows="5" required></textarea>
+                <textarea name="uraian" type="text" class="form-control" id="uraian" rows="5"></textarea>
                 <label for="kode" class="form-label">KODE</label>
-                <input type="text" name="kode" class="form-control" id="kode" required/>
+                <input required type="text" name="kode" class="form-control" id="kode" />
                 <label for="keterangan" class="form-label">KETERANGAN</label>
-                <select name="keterangan" class="form-select" id="inputGroupSelect01" >
+                <select name="keterangan" class="form-select" id="inputGroupSelect01">
                     <option value="Masuk">MASUK</option>
                     <option value="Keluar">KELUAR</option>
 
                 </select>
                 <br>
                 <label for="formFileLg" class="form-label">FILE SURAT</label>
-                <input name="fileUpload" class="form-control form-control-lg" id="formFileLg" type="file" accept="application/pdf" required/>
+                <input name="fileUpload" class="form-control form-control-lg" id="formFileLg" type="file" accept="application/pdf" />
 
                 <button class="btn btn-primary kirim">KIRIM</button>
             </form>

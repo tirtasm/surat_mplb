@@ -3,6 +3,7 @@ $koneksi = mysqli_connect("localhost", "root", "", "surat");
 $no_surat = $_POST['no_surat'];
 $tanggal_surat = $_POST['tanggal_surat'];
 $dari = $_POST['dari'];
+$kepada = $_POST['kepada'];
 $uraian = $_POST['uraian'];
 $kode = $_POST['kode'];
 $keterangan = $_POST['keterangan'];
