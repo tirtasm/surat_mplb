@@ -110,10 +110,10 @@ if (isset($_POST['update'])) {
         alert('Data Berhasil Diedit');
         document.location.href = 'view.php';
         </script>";
-
+    
         
 
-        
+        //buatkan print echo 
     
 }
 

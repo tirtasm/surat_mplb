@@ -85,7 +85,7 @@ $row=mysqli_fetch_array($result);
 
                 <label for="no_surat" class="form-label">NO SURAT</label>
                 <input type="text" name="no_surat" class="form-control" id="no_surat" value="<?php echo $row['no_surat']; ?>" />
-                <input type="hidden" name="id" class="form-control" value="<?php echo $row['id']; ?>">
+                
                 <label for="tanggal" class="form-label">TANGGAL SURAT</label>
                 <input type="date" name="tanggal_surat" class="form-control" id="tanggal" value="<?php echo $row['tanggal_surat']; ?>" />
                 <label for="dari" class="form-label">DARI/KEPADA</label>

@@ -3,7 +3,7 @@ $koneksi = mysqli_connect("localhost", "root", "", "surat");
 $no_surat = $_POST['no_surat'];
 $tanggal_surat = $_POST['tanggal_surat'];
 $dari = $_POST['dari'];
-$kepada = $_POST['kepada'];
+$dari = $_POST['kepada'];
 $uraian = $_POST['uraian'];
 $kode = $_POST['kode'];
 $keterangan = $_POST['keterangan'];
@@ -78,17 +78,17 @@ $folder = "/SURAT/";
 $path = $folder . $pic;
 
 
+
+
+// Memindahkan file ke folder yang telah ditentukan
 if (move_uploaded_file($_FILES["fileUpload"]["tmp_name"], "SURAT/" . "$folder_tahun/$folder_bulan/$folder_hari/" . $_FILES["fileUpload"]["name"])) {
     echo "
     <script>
     alert('Data Berhasil Ditambahkan');
     document.location.href = 'index.php';
     </script>
-    
     ";
 }
-
-// Memindahkan file ke folder yang telah ditentukan
 
 
 

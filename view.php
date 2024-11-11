@@ -49,6 +49,7 @@ $nama_bulan = [
         }
 
         body {
+            
             background-color: #f2f2f2;
         }
 
@@ -92,6 +93,7 @@ $nama_bulan = [
             <div class="box"><a href="SURAT/" class="btn btn-primary">LIHAT SURAT</a></div>
 
         </div>
+        <div class="table-responsive">
         <table class="table table-hover">
             <thead>
                 <tr>
@@ -99,12 +101,13 @@ $nama_bulan = [
                     <th scope="col">TANGGAL</th>
                     <th scope="col">TANGGAL SURAT</th>
                     <th scope="col">DARI / KEPADA</th>
-                    <th scope="col">URAIAN</th>
+                    <th style="width:20rem;" scope="col">URAIAN</th>
                     <th scope="col">KODE</th>
                     <th scope="col">KETERANGAN</th>
                     <!-- <th scope="col">FILE</th> -->
                     <th scope="col">FILE</th>
                     <th scope="col">AKSI</th>
+                    
                 </tr>
             </thead>
             <tbody>
@@ -122,11 +125,12 @@ $nama_bulan = [
 
                 ?>
                     <tr>
+                        
                         <td><?php echo $datanya['no_surat']; ?></td>
                         <td><?php echo $datanya['tanggal_input']; ?></td>
                         <td><?php echo $datanya['tanggal_surat']; ?></td>
                         <td><?php echo $datanya['dari']; ?></td>
-                        <td><?php echo $datanya['uraian']; ?></td>
+                        <td style="word-wrap: break-word;min-width: 160px;max-width: 160px;"><?php echo $datanya['uraian']; ?></td>
                         <td><?php echo $datanya['kode']; ?></td>
                         <td><?php echo $datanya['keterangan']; ?></td>
                         <td><a class="btn btn-success" href=<?php echo ("SURAT/$tahun/$bulan/$tanggal/$surat") ?>>LIHAT</a></td>
@@ -139,7 +143,10 @@ $nama_bulan = [
 
             </tbody>
         </table>
+        </div>
+        
     </div>
+
 
 
 

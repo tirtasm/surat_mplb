@@ -63,7 +63,7 @@
                 <label for="dari" class="form-label">DARI/KEPADA</label>
                 <input required type="text" name="dari" class="form-control" id="dari" />
                 <label for="uraian" class="form-label">URAIAN</label>
-                <textarea name="uraian" type="text" class="form-control" id="uraian" rows="5"></textarea>
+                <textarea name="uraian" type="text" class="form-control" id="uraian" rows="3"></textarea>
                 <label for="kode" class="form-label">KODE</label>
                 <input required type="text" name="kode" class="form-control" id="kode" />
                 <label for="keterangan" class="form-label">KETERANGAN</label>
@@ -74,7 +74,7 @@
                 </select>
                 <br>
                 <label for="formFileLg" class="form-label">FILE SURAT</label>
-                <input name="fileUpload" class="form-control form-control-lg" id="formFileLg" type="file" accept="application/pdf" />
+                <input required name="fileUpload" class="form-control form-control-lg" id="formFileLg" type="file" accept="application/" />
 
                 <button class="btn btn-primary kirim">KIRIM</button>
             </form>
@@ -82,7 +82,21 @@
     </div>
 
     <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
-
 </body>
 
+
 </html>
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $selectedDate = $_POST["tanggal_surat"];
+    $today = date("Y-m-d");
+
+    if ($selectedDate < $today) {
+        echo '<p style="color: red;">Please select a date today or in the future.</p>';
+    } else {    
+        echo '<p style="color: green;">Date is valid!</p>';
+        // Process the form data if the date is valid
+        // ...
+    }
+}
+?>
